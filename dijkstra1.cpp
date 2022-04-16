@@ -1,3 +1,7 @@
+/*
+ *注意dijkstra1不可以处理负权边
+*/
+
 #include <iostream>
 #include <cstdio>
 #include <cstring>
@@ -42,7 +46,7 @@ int main(){
     while (m--) {
         int a, b, c;
         cin >> a >> b >> c;
-        // 处理重边 
+        // 处理重边与自环
         g[a][b] = min(g[a][b], c);
     }
     cout << dj() << endl;
