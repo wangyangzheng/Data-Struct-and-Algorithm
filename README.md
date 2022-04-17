@@ -7,4 +7,4 @@
 4. 拥抱孤独, 过滤外界杂音, 平稳心态
 
 
-![v2-11e1e48096338652a28967dfaa666a47_r.jpg](https://pic.dogimg.com/2022/04/17/625bf05acbaf3.jpg)
+
