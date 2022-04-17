@@ -15,6 +15,5 @@ def dfs(u):
                 flag[i] = True
                 dfs(u + 1)
                 # 恢复现场
-                res[u] = 0
                 flag[i] = False
 dfs(0)
