@@ -9,7 +9,7 @@ int n, m;
 
 //j 代表背包体积, 状态表示价值
 int func(int w[], int v[], int i, int j) {
-    if (j - w[i] < 0) return -1;
+    if (j < 0) return -1;
     if (i == n) return 0;
     int p1 = func(w, v, i + 1, j);
     int p2 = 0;
