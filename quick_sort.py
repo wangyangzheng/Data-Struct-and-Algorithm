@@ -1,28 +1,25 @@
-def quick_sort(arr, left, right):
-    //递归结束
+def quick_sort(nums, left, right):
     if left >= right:
-        return
-    i = left - 1
-    j = right + 1
-    x = arr[(i+j)//2]
-    while left < right:
+        return 
+    x = nums[(left + right) // 2]
+    i, j = left - 1, right + 1
+    while i < j:
         while True:
             i += 1
-            if arr[i] >= x:
+            if nums[i] >= x:
                 break
         while True:
             j -= 1
-            if arr[j] <= x:
+            if nums[j] <= x:
                 break
         if i < j:
-            arr[i], arr[j] = arr[j], arr[i]
-        else:
-            break
-    quick_sort(arr, left, j)
-    quick_sort(arr, j+1, right)
-
+            nums[i], nums[j] = nums[j], nums[i]
+        else: break
+    quick_sort(nums, left, j)
+    quick_sort(nums, j + 1, right)
 
 n = int(input())
 a = list(map(int, input().split()))
-quick_sort(a, 0, n-1)
-print(' '.join(map(str, a)))
+
+quick_sort(a, 0, n - 1)
+print(" ".join(map(str, a)))
