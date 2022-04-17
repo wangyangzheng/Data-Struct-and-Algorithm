@@ -16,7 +16,7 @@ public class hanluota2{
             return ;
         } else {
             // from 去 other to
-            func(n -1, from, other, to);
+            func(n - 1, from, other, to);
             System.out.println("move " + " " + n + " " + from + " to " + to);
             func(n - 1, other, to, from);
         }
